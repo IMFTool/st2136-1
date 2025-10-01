@@ -332,7 +332,7 @@
   </xs:complexContent>
 </xs:complexType>
 <xs:complexType name="ExponentParamsType">
-  <xs:attribute name="exponent" type="xs:float" use="required"/>
+  <xs:attribute name="exponent" type="xs:float" use="required" default="1.0"/>
   <xs:attribute name="offset" use="optional">
     <xs:simpleType>
       <xs:restriction base="xs:float">
