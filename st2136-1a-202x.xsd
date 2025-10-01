@@ -29,6 +29,16 @@
   </xs:restriction>
 </xs:simpleType>
 
+<!--  Data Type: floatListLength3Type  -->
+<xs:simpleType name="floatListLength3Type">
+  <xs:restriction>
+    <xs:simpleType>
+      <xs:list itemType="xs:float"/>
+    </xs:simpleType>
+    <xs:length value="3"/>
+  </xs:restriction>
+</xs:simpleType>
+
 <!--  Data Type: positiveFloatListLength3Type  -->
 <xs:simpleType name="positiveFloatListLength3Type">
   <xs:restriction>
@@ -44,16 +54,6 @@
   <xs:restriction>
     <xs:simpleType>
       <xs:list itemType="clf:nonNegativeFloatType"/>
-    </xs:simpleType>
-    <xs:length value="3"/>
-  </xs:restriction>
-</xs:simpleType>
-
-<!--  Data Type: floatListLength3Type  -->
-<xs:simpleType name="floatListLength3Type">
-  <xs:restriction>
-    <xs:simpleType>
-      <xs:list itemType="xs:float"/>
     </xs:simpleType>
     <xs:length value="3"/>
   </xs:restriction>
