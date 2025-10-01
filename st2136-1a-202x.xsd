@@ -207,8 +207,8 @@
         <xs:element name="Array" type="clf:ArrayType"/>
       </xs:sequence>
       <xs:attribute name="interpolation" use="optional" fixed="linear" type="xs:string"/>
-      <xs:attribute name="rawHalfs" type="xs:string" use="optional" fixed="true"/>
       <xs:attribute name="halfDomain" type="xs:string" use="optional" fixed="true"/>
+      <xs:attribute name="rawHalfs" type="xs:string" use="optional" fixed="true"/>
     </xs:extension>
   </xs:complexContent>
 </xs:complexType>
