@@ -198,11 +198,9 @@
 
 <!-- Elements which may be used in the Info element -->
 <xs:element name="Profile" type="xs:string"/>
-<xs:element name="ACEStransformID" type="clf:URNType"/>
 <xs:element name="AppRelease" type="dcml:UserTextType"/>
 <xs:element name="Copyright" type="dcml:UserTextType"/>
 <xs:element name="Revision" type="dcml:UserTextType"/>
-<xs:element name="ACESuserName" type="dcml:UserTextType"/>
 <xs:element name="InputCharacteristics" type="clf:SignalCharacteristicsType"/>
 <xs:element name="OutputCharacteristics" type="clf:SignalCharacteristicsType"/>
 <xs:element name="Keywords" type="dcml:UserTextType"/>
