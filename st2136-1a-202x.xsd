@@ -29,6 +29,16 @@
   </xs:restriction>
 </xs:simpleType>
 
+<!--  Data Type: floatListLength3Type  -->
+<xs:simpleType name="floatListLength3Type">
+  <xs:restriction>
+    <xs:simpleType>
+      <xs:list itemType="xs:float"/>
+    </xs:simpleType>
+    <xs:length value="3"/>
+  </xs:restriction>
+</xs:simpleType>
+
 <!--  Data Type: positiveFloatListLength3Type  -->
 <xs:simpleType name="positiveFloatListLength3Type">
   <xs:restriction>
@@ -44,16 +54,6 @@
   <xs:restriction>
     <xs:simpleType>
       <xs:list itemType="clf:nonNegativeFloatType"/>
-    </xs:simpleType>
-    <xs:length value="3"/>
-  </xs:restriction>
-</xs:simpleType>
-
-<!--  Data Type: floatListLength3Type  -->
-<xs:simpleType name="floatListLength3Type">
-  <xs:restriction>
-    <xs:simpleType>
-      <xs:list itemType="xs:float"/>
     </xs:simpleType>
     <xs:length value="3"/>
   </xs:restriction>
@@ -83,13 +83,6 @@
 <xs:simpleType name="channelType">
   <xs:restriction base="xs:string">
     <xs:pattern value="[RGB]"/>
-  </xs:restriction>
-</xs:simpleType>
-
-<!--  Data Type: URNType  -->
-<xs:simpleType name="URNType">
-  <xs:restriction base="xs:anyURI">
-    <xs:pattern value="urn:[A-Za-z0-9][A-Za-z0-9-]{0,30}[A-Za-z0-9]:([A-Za-z0-9\-._~!$'()@*+,;=:@]|%[0-9A-Fa-f]{2})*"/>
   </xs:restriction>
 </xs:simpleType>
 
@@ -198,11 +191,9 @@
 
 <!-- Elements which may be used in the Info element -->
 <xs:element name="Profile" type="xs:string"/>
-<xs:element name="ACEStransformID" type="clf:URNType"/>
 <xs:element name="AppRelease" type="dcml:UserTextType"/>
 <xs:element name="Copyright" type="dcml:UserTextType"/>
 <xs:element name="Revision" type="dcml:UserTextType"/>
-<xs:element name="ACESuserName" type="dcml:UserTextType"/>
 <xs:element name="InputCharacteristics" type="clf:SignalCharacteristicsType"/>
 <xs:element name="OutputCharacteristics" type="clf:SignalCharacteristicsType"/>
 <xs:element name="Keywords" type="dcml:UserTextType"/>
@@ -216,8 +207,8 @@
         <xs:element name="Array" type="clf:ArrayType"/>
       </xs:sequence>
       <xs:attribute name="interpolation" use="optional" fixed="linear" type="xs:string"/>
-      <xs:attribute name="rawHalfs" type="xs:string" use="optional" fixed="true"/>
       <xs:attribute name="halfDomain" type="xs:string" use="optional" fixed="true"/>
+      <xs:attribute name="rawHalfs" type="xs:string" use="optional" fixed="true"/>
     </xs:extension>
   </xs:complexContent>
 </xs:complexType>
@@ -341,7 +332,7 @@
   </xs:complexContent>
 </xs:complexType>
 <xs:complexType name="ExponentParamsType">
-  <xs:attribute name="exponent" type="xs:float" use="required"/>
+  <xs:attribute name="exponent" type="xs:float" use="required" default="1.0"/>
   <xs:attribute name="offset" use="optional">
     <xs:simpleType>
       <xs:restriction base="xs:float">
