@@ -196,7 +196,7 @@
   <xs:anyAttribute processContents="lax"/>
 </xs:complexType>
 
-<!-- Elements which may be used in the Info element -->
+<!-- Examples of elements which may be used in the Info element -->
 <xs:element name="Profile" type="xs:string"/>
 <xs:element name="ACEStransformID" type="clf:URNType"/>
 <xs:element name="AppRelease" type="dcml:UserTextType"/>
