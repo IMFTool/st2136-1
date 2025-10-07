@@ -294,7 +294,7 @@
   </xs:complexContent>
 </xs:complexType>
 <xs:complexType name="LogParamsType">
-  <xs:attribute name="base" type="xs:float" use="optional" default="10"/>
+  <xs:attribute name="base" type="xs:float" use="optional" default="2"/>
   <xs:attribute name="logSideSlope" type="xs:float" use="optional" default="1.0"/>
   <xs:attribute name="logSideOffset" type="xs:float" use="optional" default="0.0"/>
   <xs:attribute name="linSideSlope" type="xs:float" use="optional" default="1.0"/>
