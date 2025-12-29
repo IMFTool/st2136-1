@@ -86,12 +86,6 @@
   </xs:restriction>
 </xs:simpleType>
 
-<!--  Data Type: VideoSignalRangeType  -->
-<!--  Restrictions can be defined for CLF Profiles  -->
-<xs:simpleType name="VideoSignalRangeType">
-  <xs:restriction base="xs:string"/>
-</xs:simpleType>
-
 <!--  SIMPLE DATA TYPES END -->
 
 <!--  COMPLEX DATA TYPES  -->
@@ -117,26 +111,6 @@
         </xs:simpleType>
       </xs:attribute>
     </xs:restriction>
-  </xs:simpleContent>
-</xs:complexType>
-
-<!--  Data Type: SignalCharacteristics  -->
-<xs:complexType name="SignalCharacteristicsType">
-  <xs:sequence>
-    <xs:element name="ColorPrimaries" type="clf:LabelsRegisterSymbolType"/>
-    <xs:element name="TransferCharacteristic" type="clf:LabelsRegisterSymbolType"/>
-    <xs:element name="CodingEquations" type="clf:LabelsRegisterSymbolType"/>
-    <xs:element name="VideoSignalRange" type="clf:VideoSignalRangeType"/>
-  </xs:sequence>
-</xs:complexType>
-
-<!--  Data Type: LabelsRegisterSymbol  -->
-<xs:complexType name="LabelsRegisterSymbolType">
-  <xs:simpleContent>
-    <xs:extension base="xs:string">
-      <xs:attribute name="scope" type="xs:anyURI" use="optional"
-        default="http://www.smpte-ra.org/schemas/400/2012"/>
-    </xs:extension>
   </xs:simpleContent>
 </xs:complexType>
 <!--  COMPLEX DATA TYPES END -->
@@ -194,8 +168,6 @@
 <xs:element name="AppRelease" type="dcml:UserTextType"/>
 <xs:element name="Copyright" type="dcml:UserTextType"/>
 <xs:element name="Revision" type="dcml:UserTextType"/>
-<xs:element name="InputCharacteristics" type="clf:SignalCharacteristicsType"/>
-<xs:element name="OutputCharacteristics" type="clf:SignalCharacteristicsType"/>
 <xs:element name="Keywords" type="dcml:UserTextType"/>
 
 <!--  ProcessNode: LUT1D definition  -->
