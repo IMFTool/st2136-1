@@ -4,8 +4,7 @@
 	<Description>CIE-XYZ D65 to CIELAB L*, a*, b* (scaled by 1/100, neutrals at 
         0.0 chroma)</Description>
 	<InputDescriptor>CIE-XYZ, D65 white (scaled [0,1])</InputDescriptor>
-	<OutputDescriptor>CIELAB L*, a*, b* (scaled by 1/100, neutrals at 0.0 
-        chroma)</OutputDescriptor>
+	<OutputDescriptor>CIELAB L*, a*, b* (scaled by 1/100, neutrals at 0.0 chroma)</OutputDescriptor>
 	<Matrix inBitDepth="16f" outBitDepth="16f">
 		<Array dim="3 3">
 			1.052126639 0.000000000 0.000000000
