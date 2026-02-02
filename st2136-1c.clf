@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ProcessList xmlns="http://www.smpte-ra.org/ns/2136-1/2024">
+<ProcessList xmlns="http://www.smpte-ra.org/ns/2136-1/2024" id="test" compCLFversion="3.0">
 	<Id>urn:uuid:9d768121-0cf9-40a3-a8e3-7b49f79858a7</Id>
 	<Description>Identity transform illustrating Array bit depth scaling</Description>
 	<Description>Can be loaded by either SMPTE or CLF v3 parsers</Description>
